@@ -27,7 +27,7 @@ double findMin(const std::vector<double> &data)
 Stats Statistics::ComputeStatistics(const std::vector<double>& data) {
     //Implement statistics here
     
-    double avg=NAN, mx=NAN, mn=NAN;
+    double avg=std::nan("1"), mx=std::nan("1"), mn=std::nan("1");
     auto n = data.size();
     if(n)
     {
