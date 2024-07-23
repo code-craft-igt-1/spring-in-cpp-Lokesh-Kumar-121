@@ -2,7 +2,7 @@
 #include <numeric>
 #include <algorithm>
 #include <iostream>
-#include <limits>
+#include <cmath>
 using namespace Statistics;
 
 double findAverage(const std::vector<double> &data)
@@ -27,8 +27,9 @@ double findMin(const std::vector<double> &data)
 
 Stats Statistics::ComputeStatistics(const std::vector<double>& data) {
     //Implement statistics here
-    
-    double avg=NAN, mn=NAN, mx=NAN;
+    double avg = nan("1");
+    double mn = nan("1"); 
+    double mx = nan("1");
     auto n = data.size();
     if(n)
     {
